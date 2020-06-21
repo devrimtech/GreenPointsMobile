@@ -4,13 +4,14 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
-             x:Class="GreenPointsMobile.MainPage">
+             x:Class="GreenPointsMobile.MainPage"
+             BackgroundImage="background.jpg"
+             >
 
-    <StackLayout>
-        <!-- Place new controls here -->
-        <Label Text="Welcome to Xamarin.Forms!" 
-           HorizontalOptions="Center"
-           VerticalOptions="CenterAndExpand" />
+    <StackLayout Spacing="20" Padding="50" VerticalOptions="Center" >
+        <Entry Placeholder="Email"></Entry>
+        <Entry Placeholder="Password" IsPassword="True"></Entry>
+        <Button Text="Log In" TextColor="White" BackgroundColor="#ff77D065"></Button>
     </StackLayout>
 
 </ContentPage>
