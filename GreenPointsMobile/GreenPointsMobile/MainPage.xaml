@@ -5,13 +5,29 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              x:Class="GreenPointsMobile.MainPage"
-             BackgroundImage="background.jpg"
              >
 
-    <StackLayout Spacing="20" Padding="50" VerticalOptions="Center" >
-        <Entry Placeholder="Email"></Entry>
-        <Entry Placeholder="Password" IsPassword="True"></Entry>
-        <Button Text="Log In" TextColor="White" BackgroundColor="#ff77D065"></Button>
-    </StackLayout>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height=".5*"/>
+            <RowDefinition Height="2*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <Image Source="" BackgroundColor="Gray" Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="2"/>
+
+        <Editor Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="1" Placeholder="Enter note here"/>
+
+        <Button Grid.Row="2" Grid.Column="0" Text="Save"/>
+
+        <Button Grid.Row="2" Grid.Column="1" Text="Delete"/>
+
+        <Label Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2" Text="Cool" FontSize="Large"/>
+    </Grid>
 
 </ContentPage>
