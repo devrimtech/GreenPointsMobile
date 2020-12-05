@@ -10,9 +10,6 @@ using Xamarin.Forms.Xaml;
 namespace GreenPointsMobile.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class LoginPage : ContentPage
-    {
-        public LoginPage()
-        { }
-    }
+    public partial class MainPage : ContentPage
+    { }
 }

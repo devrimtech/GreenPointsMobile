@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "370216038429",
+    "project_id": "greenpointsmobile",
+    "storage_bucket": "greenpointsmobile.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:370216038429:android:10f6b39394dab2e5c616f4",
+        "android_client_info": {
+          "package_name": "tech.devrim.greenpoints"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "370216038429-e066m88ak87b07e6gsohc2dhuibc9g20.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAEXAeXmBiclgog69h-M13I6XIykfCmRa4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "370216038429-e066m88ak87b07e6gsohc2dhuibc9g20.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "370216038429-b3i6r72en62e64l15qaq1lt9t16pbdpr.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "tech.devrim.greenpoints"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

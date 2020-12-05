@@ -14,8 +14,6 @@ using Android.Widget;
 using GreenPointsMobile.Data;
 using GreenPointsMobile.Droid.Data;
 
-[assembly: DefaultDependency(typeof(SQLite_Android))]
-
 namespace GreenPointsMobile.Droid.Data
 {
     public class SQLite_Android : ISQLite
