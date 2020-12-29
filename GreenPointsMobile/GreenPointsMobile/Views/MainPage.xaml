@@ -4,7 +4,7 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
-             x:Class="GreenPointsMobile.Views.Mainpage"
+             x:Class="GreenPointsMobile.Views.MainPage"
              BackgroundImageSource="background.jpg">
 
     <StackLayout x:Name="MasterLayout">
@@ -21,12 +21,15 @@
                     <OnIdiom.Tablet>140, 150, 140, 0</OnIdiom.Tablet>
                 </OnIdiom>
             </StackLayout.Padding>
-            <ActivityIndicator x:Name="ActivitySpinner" Color="Red" IsRunning="true" />
-            <Label x:Name="Lb1_Username" Text="Username" TextColor="White"/>
-            <Entry x:Name="Entry_Username" PlaceholderColor="White" TextColor="White"/>
-            <Label x:Name="Lb1_Password" Text="Password"  TextColor="White"/>
-            <Entry x:Name="Entry_Password" PlaceholderColor="White" TextColor="White" IsPassword="True"/>
+            <ActivityIndicator x:Name="ActivitySpinner" Color="Red" IsRunning="False"/>
+            <Label x:Name="ApiKey"></Label>
+            <Label x:Name="LabelEmail" Text="Email" TextColor="White"/>
+            <Entry x:Name="UserEmail" PlaceholderColor="White" TextColor="White"/>
+            <Label x:Name="LabelPassword" Text="Password"  TextColor="White"/>
+            <Entry x:Name="UserPassword" PlaceholderColor="White" TextColor="White" IsPassword="True"/>
             <Button x:Name="Btn_Signin" Text="Sign In" Clicked="SignInProcedure" BackgroundColor="LightSeaGreen"/>
+            <Button x:Name="changeRegister" Text="Register" Clicked="ChangeRegister" BackgroundColor="LightSeaGreen"/>
+            <Button x:Name="Btn_Register" Text="Register" Clicked="RegisterButton" BackgroundColor="LightSeaGreen" IsVisible="False"/>
         </StackLayout>
     </StackLayout>
 </ContentPage>
