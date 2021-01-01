@@ -9,6 +9,8 @@
 
     <StackLayout x:Name="MasterLayout">
         <!--  <Image Source="background.jpg" VerticalOptions="FillAndExpand" /> -->
+        <Button x:Name="changeRegister" Text="👈     Register" Clicked="ChangeRegister" BackgroundColor="LightSeaGreen" Margin="40,10" />
+        <Button x:Name="changeLogin" Text="👈     Sign In" Clicked="ChangeLogin" BackgroundColor="LightSeaGreen" Margin="40,10" IsVisible="False"/>
             <StackLayout x:Name="LogoStack" VerticalOptions="FillAndExpand">
                 <Image x:Name="LoginIcon" Source="icon.png" Margin="0,80,0,0"/>
             </StackLayout>
@@ -22,13 +24,11 @@
                 </OnIdiom>
             </StackLayout.Padding>
             <ActivityIndicator x:Name="ActivitySpinner" Color="Red" IsRunning="False"/>
-            <Label x:Name="ApiKey"></Label>
             <Label x:Name="LabelEmail" Text="Email" TextColor="White"/>
             <Entry x:Name="UserEmail" PlaceholderColor="White" TextColor="White"/>
             <Label x:Name="LabelPassword" Text="Password"  TextColor="White"/>
             <Entry x:Name="UserPassword" PlaceholderColor="White" TextColor="White" IsPassword="True"/>
             <Button x:Name="Btn_Signin" Text="Sign In" Clicked="SignInProcedure" BackgroundColor="LightSeaGreen"/>
-            <Button x:Name="changeRegister" Text="Register" Clicked="ChangeRegister" BackgroundColor="LightSeaGreen"/>
             <Button x:Name="Btn_Register" Text="Register" Clicked="RegisterButton" BackgroundColor="LightSeaGreen" IsVisible="False"/>
         </StackLayout>
     </StackLayout>

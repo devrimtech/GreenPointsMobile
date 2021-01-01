@@ -48,6 +48,20 @@ namespace GreenPointsMobile.Views
                 Btn_Signin.IsVisible = false;
                 Btn_Register.IsVisible = true;
                 changeRegister.IsVisible = false;
+                changeLogin.IsVisible = true;
+            }
+        }
+
+        async void ChangeLogin(System.Object sender, System.EventArgs e)
+        {
+            registering = false;
+
+            if (!registering)
+            {
+                Btn_Signin.IsVisible = true;
+                Btn_Register.IsVisible = false;
+                changeRegister.IsVisible = true;
+                changeLogin.IsVisible = false;
             }
         }
 
