@@ -27,6 +27,7 @@ namespace GreenPointsMobile.Views
             var authProvider = new FirebaseAuthProvider(new FirebaseConfig(secrets.APIKEY));
             try
             {
+                /*UserEmail.Text = RegisteredEmail.Length > 0 ? UserEmail.Text = RegisteredEmail : UserEmail.Text = UserEmail.Text;*/
                 var auth = await authProvider.SignInWithEmailAndPasswordAsync(UserEmail.Text, UserPassword.Text);
                 var content = await auth.GetFreshAuthAsync();
                 var serializedcontnet = JsonConvert.SerializeObject(content);
@@ -50,9 +51,10 @@ namespace GreenPointsMobile.Views
                 changeRegister.IsVisible = false;
                 changeLogin.IsVisible = true;
             }
+            await Navigation.PushAsync(new DashboardPage());
         }
 
-        async void ChangeLogin(System.Object sender, System.EventArgs e)
+        void ChangeLogin(System.Object sender, System.EventArgs e)
         {
             registering = false;
 
@@ -72,7 +74,8 @@ namespace GreenPointsMobile.Views
                 var authProvider = new FirebaseAuthProvider(new FirebaseConfig(secrets.APIKEY));
                 var auth = await authProvider.CreateUserWithEmailAndPasswordAsync(UserEmail.Text, UserPassword.Text);
                 string gettoken = auth.FirebaseToken;
-                await App.Current.MainPage.DisplayAlert("Alert", "Registered", "OK");
+                await App.Current.MainPage.DisplayAlert("Alert", "Registered, Please Sign in!", "OK");
+                await Navigation.PushAsync(new DashboardPage());
             }
             catch (Exception ex)
             {

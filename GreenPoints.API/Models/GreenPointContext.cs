@@ -14,5 +14,6 @@ namespace GreenPoints.API.Models
         }
 
         public DbSet<GreenPointItem> GreenPointItem { get; set; }
+        public DbSet<GreenPointUserItem> GreenPointUserItem { get; set; }
     }
 }

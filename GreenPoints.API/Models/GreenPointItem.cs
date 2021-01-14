@@ -8,11 +8,13 @@ namespace GreenPoints.API.Models
 {
     public class GreenPointItem
     {
-        private int Points { get; set; }
-        private bool IsComplete { get; set; }
-        private string Name { get; set; }
-        private string? Description { get; set; }
-        private DateTime time { get; set; }
+        // Needed for the cards
+        public int Points { get; set; }
+        public bool IsComplete { get; set; }
+        public string Name { get; set; }
+        public string? Description { get; set; }
+        // Private because the value should be automatically set and only needed for checking when the item was completed. 
+        public DateTime time { get; set; }
 
         [Key]
         public int Id { get; set; }
