@@ -10,12 +10,13 @@ using Xamarin.Essentials;
 using Xamarin.Forms;
 using System.IO;
 using GreenPointsMobile.Testing;
+using GreenPointsMobile.Constants;
 
 namespace GreenPointsMobile.Views
 {
     public partial class MainPage : ContentPage
     {
-        bool registering = false;
+        Constants.Constants constant = new Constants.Constants();
         Secrets secrets = new Secrets();
         public MainPage()
         {
@@ -42,9 +43,9 @@ namespace GreenPointsMobile.Views
 
         async void ChangeRegister(System.Object sender, System.EventArgs e)
         {
-            registering = true;
+            constant.Registered = true;
 
-            if (registering)
+            if (constant.Registered)
             {
                 Btn_Signin.IsVisible = false;
                 Btn_Register.IsVisible = true;
@@ -56,9 +57,9 @@ namespace GreenPointsMobile.Views
 
         void ChangeLogin(System.Object sender, System.EventArgs e)
         {
-            registering = false;
+            constant.Registered = false;
 
-            if (!registering)
+            if (!constant.Registered)
             {
                 Btn_Signin.IsVisible = true;
                 Btn_Register.IsVisible = false;
