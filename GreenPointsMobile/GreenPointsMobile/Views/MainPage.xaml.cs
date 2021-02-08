@@ -1,16 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Firebase.Auth;
 using Newtonsoft.Json;
 using Xamarin.Essentials;
 using Xamarin.Forms;
-using System.IO;
 using GreenPointsMobile.Testing;
-using GreenPointsMobile.Constants;
 
 namespace GreenPointsMobile.Views
 {

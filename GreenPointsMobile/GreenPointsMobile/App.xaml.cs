@@ -10,7 +10,7 @@ namespace GreenPointsMobile
         public App()
         {
             InitializeComponent();
-            MainPage = new NavigationPage(new Views.MainPage());
+            MainPage = new NavigationPage(new Views.DashboardPage());
         }
 
         protected override void OnStart()
