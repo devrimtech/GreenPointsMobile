@@ -20,12 +20,9 @@ namespace GreenPointsMobile.Views
         {
             try
             {
-                HttpResponseMessage response = await client.GetAsync("https://localhost:5001/api/GreenPointItems/1/");
+                HttpResponseMessage response = await client.GetAsync("https://89558aba8b34.ngrok.io/api/GreenPointItems/1/");
                 response.EnsureSuccessStatusCode();
                 string responseBody = await response.Content.ReadAsStringAsync();
-                Console.ReadLine();
-                Debug.WriteLine(responseBody);
-                Console.WriteLine(responseBody);
                 // Above three lines can be replaced with new helper method below
                 // string responseBody = await client.GetStringAsync(uri);
             }

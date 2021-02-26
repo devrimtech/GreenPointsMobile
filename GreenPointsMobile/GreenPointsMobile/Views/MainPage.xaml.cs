@@ -31,6 +31,7 @@ namespace GreenPointsMobile.Views
             catch (Exception ex)
             {
                 await App.Current.MainPage.DisplayAlert("Alert", "Invalid email or password", "OK");
+                Console.WriteLine(ex);
             }
         }
 
